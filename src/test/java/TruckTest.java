@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import vehicles.Truck;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,5 +21,15 @@ public class TruckTest {
     @Test
     public void hasPrice(){
         assertEquals( 500000, truck.getPrice());
+    }
+
+    @Test
+    public void hasSeats(){
+        assertEquals(2, truck.getSeats());
+    }
+
+    @Test
+    public void hasWheels(){
+        assertEquals(16, truck.getWheels());
     }
 }
