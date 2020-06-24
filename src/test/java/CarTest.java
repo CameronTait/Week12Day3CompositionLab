@@ -17,8 +17,13 @@ public class CarTest {
         assertEquals("2 liter", car.getEngine());
         }
 
-
+        @Test
+    public void hasPrice(){
+        assertEquals( 100000, car.getPrice());
+        }
 }
+
+
 
 
 
