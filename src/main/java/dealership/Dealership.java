@@ -12,12 +12,19 @@ public class Dealership {
 
     public Dealership(int till) {
         this.till = till;
-        this.vehicle = new ArrayList<Vehicle>();
+        vehicle = new ArrayList<Vehicle>();
     }
 
     public int getTill(){
         return till;
     }
 
+    public ArrayList<vehicle> addToList(int vehicle){
+        this.vehicle[0] = vehicle;
+    }
+
+    public int getVehicleCount(){
+        return this.vehicle.size();
+    }
 
 }
